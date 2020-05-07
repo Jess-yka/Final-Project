@@ -1,0 +1,36 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="grades">
+            <h2><span>Grades</span> {{ grades.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Grades</span></dt>
+                <dd>
+                    <span>{{ grades.grades }}</span>
+                </dd>
+                <dt><span>Unit</span></dt>
+                <dd>
+                    <div *ngIf="grades.unit">
+                        <a [routerLink]="['/unit', grades.unit?.id, 'view']">{{ grades.unit?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/grades', grades.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

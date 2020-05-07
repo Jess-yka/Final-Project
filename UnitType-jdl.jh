@@ -1,0 +1,46 @@
+
+entity Unit{
+	unitenum UnitType,
+	name String,
+    text String,
+    comments String
+}
+
+
+enum UnitType{
+	ACTIVITY,
+   BIBLELESSON
+   }
+
+entity Grades{
+	grades GradesEnum,
+
+}
+
+enum GradesEnum {
+  GRADEK1,
+  GRADE23,
+  GRADE4,
+  GRADE5
+}
+// defining multiple OneToMany relationships with comments
+relationship ManyToOne{
+	Grades{unit} to Unit
+
+
+}
+
+
+
+// Set pagination options
+//paginate JobHistory, Employee with infinite-scroll
+//paginate Job with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+//service all with serviceImpl except Employee, Job
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
