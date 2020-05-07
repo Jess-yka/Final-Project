@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "org.launchcode.newheights"
+    },
+    "jhipsterVersion": "6.8.0",
+    "applicationType": "monolith",
+    "baseName": "newheights",
+    "packageName": "org.launchcode.newheights",
+    "packageFolder": "org/launchcode/newheights",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NDllNDM5YTMyOTRhYTk4ZjZmM2I5ODVmYjYyNTA0Yzc0ZjJiYzNkODVlZmU2Njk4MzU0MWUyMGY2YWJmMjExYTM5MTIzNzQwZmI2Zjc0MzA5ZmM2NDc2NzhkMDJlNDEwOThhYTBhYWE5MDE1NGQyMTg1MDMxMmZhZmI1YjcyOTA=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1588815453800,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
